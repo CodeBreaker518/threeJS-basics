@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+  transition: 300ms all;
+  border-radius: 6px;
+}
+nav ul li:hover {
+  background-color: rgba(173, 173, 173, 0.5);
+}
+.earth {
+  padding: 1rem;
+}
+
+.title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -15%);
+}
